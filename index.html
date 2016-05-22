@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="assets/kanbasu.css">
     <link rel="stylesheet" href="assets/main.css">
     <link rel="stylesheet" href="assets/loader.css">
+    <link rel="stylesheet" href="assets/range.css">
+    <link rel="stylesheet" href="assets/graph.css">
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
@@ -62,13 +64,13 @@
     </div>
     <div class="grid">
         <div class="w-1/2 grid__item">
-            <div class="tile text-center pdg mrg-" data-target="page-track">
-                <i class="material-icons">thumbs_up_down</i>
+            <div class="tile text-center pdg mrg-" data-target="page-track-mic">
+                <i class="material-icons">mic</i>
             </div>
         </div>
         <div class="w-1/2 grid__item">
-            <div class="tile text-center pdg mrg-">
-                <i class="material-icons">timeline</i>
+            <div class="tile text-center pdg mrg-" data-target="page-track-sliders">
+                <i class="material-icons">tune</i>
             </div>
         </div>
     </div>
@@ -79,8 +81,8 @@
             </div>
         </div>
         <div class="w-1/2 grid__item">
-            <div class="tile text-center pdg mrg-">
-                <i class="material-icons">mode_edit</i>
+            <div class="tile text-center pdg mrg-" data-target="page-graph">
+                <i class="material-icons">timeline</i>
             </div>
         </div>
     </div>
@@ -98,12 +100,12 @@
     </div>
 </div>
 
-<div class="page" id="page-track">
+<div class="page" id="page-track-mic">
     <div class="grid pdg">
         <div class="pdgt++ w-1/1 grid__item">
             <h1>Wie fühlst du dich?</h1>
 
-            <div class="microphone mrgt+ mrgb+" data-target="page-track-confirm">
+            <div class="microphone-track mrgt+ mrgb+" data-target="page-track-confirm">
                 <i class="material-icons">mic</i>
             </div>
 
@@ -139,6 +141,95 @@
     <div class="grid pdg">
         <div class="pdgt++ w-1/1 grid__item">
             <h1>Deine Stimmung wurde festgehalten</h1>
+        </div>
+    </div>
+    <div class="grid pdg">
+        <div class="w-1/1 grid__item">
+            <button data-target="page-dashboard">
+                <i class="material-icons pdg0">done</i>
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="page" id="page-track-sliders">
+    <div class="grid pdg">
+        <div class="pdgt++ w-1/1 grid__item">
+            <h1>Wie fühlst du dich?</h1>
+        </div>
+    </div>
+    <div class="grid pdg">
+        <div class="w-1/1 grid__item">
+            <label for="range1">Stress</label>
+            <input type="range" id="range1">
+        </div>
+        <div class="w-1/1 grid__item">
+            <label for="range2">Müdigkeit</label>
+            <input type="range" id="range2">
+        </div>
+        <div class="w-1/1 grid__item">
+            <label for="range3">Glück</label>
+            <input type="range" id="range3">
+        </div>
+        <div class="w-1/1 grid__item">
+            <label for="range4">Freude</label>
+            <input type="range" id="range4">
+        </div>
+    </div>
+    <div class="grid pdg">
+        <div class="w-1/1 grid__item">
+            <button data-target="page-confirmation">
+                <i class="material-icons pdg0">done</i>
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="page" id="page-graph">
+    <div class="grid pdg">
+        <div class="pdgt++ w-1/1 grid__item">
+            <h1>Deine Laune als Graph</h1>
+        </div>
+    </div>
+    <div class="grid pdg">
+        <div class="w-1/1 grid__item">
+            <dl>
+                <dd class="percentage percentage-24">
+                    <span class="text">
+                      01.01.16
+                    </span>
+                </dd>
+                <dd class="percentage percentage-20">
+                    <span class="text">
+                      02.01.16
+                    </span>
+                </dd>
+                <dd class="percentage percentage-16">
+                    <span class="text">
+                      03.01.16
+                    </span>
+                </dd>
+                <dd class="percentage percentage-18">
+                    <span class="text">
+                      04.01.16
+                    </span>
+                </dd>
+                <dd class="percentage percentage-17">
+                    <span class="text">
+                      05.01.16
+                    </span>
+                </dd>
+                <dd class="percentage percentage-28">
+                    <span class="text">
+                      06.01.16
+                    </span>
+                </dd>
+                <dd class="percentage percentage-30">
+                    <span class="text">
+                      07.01.16
+                    </span>
+                </dd>
+            </dl>
         </div>
     </div>
     <div class="grid pdg">

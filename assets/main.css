@@ -19,6 +19,9 @@
 .page input[type=button],button {
     color: #00BFA5;
 }
+[data-target] {
+    cursor: pointer;
+}
 .spinning {
     display: inline-block;
     -webkit-animation: spin 0.75s linear infinite;
@@ -55,7 +58,7 @@
 .tile.tile-red .material-icons,button.button-red .material-icons {
     color: #e55252;
 }
-.microphone {
+.microphone-track {
     display: block;
     width: 200px;
     height: 200px;
@@ -65,7 +68,7 @@
     border: 3px solid #00BFA5;
     border-radius: 50%;
 }
-.microphone .material-icons {
+.microphone-track .material-icons {
     font-size: 150px;
     margin-left: 23px;
     margin-top: 25px;
